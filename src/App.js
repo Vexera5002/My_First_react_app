@@ -99,10 +99,10 @@ function App() {
           <div className="Memberships & Passes">
             <h2>Memberships and annual, monthly, weekly, and family passes:</h2>
             <p>Weekly Pass: $40</p>
-            <p>Monthly Pass: $60</p>
-            <p>Annual Pass: $90</p>
-            <p>Family Pass (One time use only): $30</p>
-            <p>Membership (last 5 years): $270</p>
+            <p>Monthly Pass: $70</p>
+            <p>Annual Pass: $130</p>
+            <p>Family Pass (One time use only): $190</p>
+            <p>Membership (last 5 years): $350</p>
           </div>
         </div>
       )}
