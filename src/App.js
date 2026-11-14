@@ -86,6 +86,7 @@ function App() {
             <li>Waterproof Clothing (not provided)</li>
             <li>Waterproof Jacket</li>
           </ol>
+          <p>Recommended to bring shoes or other optional clothing that you don't mind getting soaked</p>
         </div>
       )}
 
