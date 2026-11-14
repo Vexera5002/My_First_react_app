@@ -29,7 +29,7 @@ function App() {
             <h1>Premium Whitewater Rafting</h1>
             <h3>Fun all across the whitewater tides</h3>
             <img
-              src="https://gstatic.com"
+              src="https://unsplash.com"
               alt="Whitewater rafting"
             />
             <p>
@@ -48,7 +48,7 @@ function App() {
       {currentPage === 'prices' && (
         <div className="Prices">
           <img
-            src="https://cdn-website.com"
+            src="https://unsplash.com"
             alt="Rafting group"
           />
           <h2>Prices:</h2>
@@ -68,7 +68,7 @@ function App() {
       {currentPage === 'gear' && (
         <div className="Gear">
           <img
-            src="https://gstatic.com"
+            src="https://unsplash.com"
             alt="Rafting safety gear"
           />
           <h2>Required safety equipment:</h2>
@@ -86,7 +86,7 @@ function App() {
       {currentPage === 'memberships' && (
         <div>
           <img
-            src="https://poconowhitewater.com"
+            src="https://unsplash.com"
             alt="Gift card and passes"
           />
           <div className="Memberships & Passes">
@@ -104,7 +104,7 @@ function App() {
       {currentPage === 'costestimator' && (
         <div>
           <img
-            src="https://magnific.com"
+            src="https://unsplash.com"
             alt="Cost estimator money illustration"
           />
           <div className="calculator-box">

@@ -1,19 +1,39 @@
-body{
-    background-color: skyblue;
+body {
+  background-color: skyblue;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.navBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: blue;
-    height: 50px;
-    
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: blue;
+  height: 50px;
 }
 
-button{
-    width: 100px;
-    height: 30px;
-    background-color: limegreen;
+button {
+  min-width: 115px;
+  height: 36px;
+  padding: 0 12px;
+  background-color: limegreen;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #28a428;
+}
+
+.home, .Prices, .Gear, .calculator-box {
+  padding: 20px;
+}
+
+img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
 }
