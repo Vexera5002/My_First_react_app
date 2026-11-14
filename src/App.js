@@ -3,11 +3,18 @@ import './App.css';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
-  const [guests, setGuests] = useState('');
+  const [adults, setAdults] = useState('');
+  const [youngAdults, setYoungAdults] = useState('');
+  const [teens, setTeens] = useState('');
+  const [children, setChildren] = useState('');
   const [totalCost, setTotalCost] = useState(null);
 
   const handleCalculate = () => {
-    const cost = Number(guests) * 65;
+    const cost =
+      Number(adults) * 20 +
+      Number(youngAdults) * 15 +
+      Number(teens) * 10 +
+      Number(children) * 5;
     setTotalCost(cost);
   };
 
@@ -29,7 +36,7 @@ function App() {
             <h1>Premium Whitewater Rafting</h1>
             <h3>Fun all across the whitewater tides</h3>
             <img
-              src="https://unsplash.com"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvImZP1ydsbDYeRz3YQWICxFkEXmwt6SIjfmEhifRPBirw3XHK-4YCELMk&s=10"
               alt="Whitewater rafting"
             />
             <p>
@@ -48,7 +55,7 @@ function App() {
       {currentPage === 'prices' && (
         <div className="Prices">
           <img
-            src="https://unsplash.com"
+            src="https://irp.cdn-website.com/3d7c9bbc/dms3rep/multi/opt/EOSR2042-640w.jpg"
             alt="Rafting group"
           />
           <h2>Prices:</h2>
@@ -68,7 +75,7 @@ function App() {
       {currentPage === 'gear' && (
         <div className="Gear">
           <img
-            src="https://unsplash.com"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgoWJ7dCV-OgGDPl6w1hNNRFAKKEAvRoFXZ7tb6koimGYUxETFgLb3ZlUs&s=10"
             alt="Rafting safety gear"
           />
           <h2>Required safety equipment:</h2>
@@ -86,7 +93,7 @@ function App() {
       {currentPage === 'memberships' && (
         <div>
           <img
-            src="https://unsplash.com"
+            src="https://www.poconowhitewater.com/wp-content/uploads/2026/04/gift-card-2023-768x432-1.jpg"
             alt="Gift card and passes"
           />
           <div className="Memberships & Passes">
@@ -104,19 +111,60 @@ function App() {
       {currentPage === 'costestimator' && (
         <div>
           <img
-            src="https://unsplash.com"
+            src="https://img.magnific.com/free-psd/money-illustration-isolated_23-2151568514.jpg"
             alt="Cost estimator money illustration"
           />
           <div className="calculator-box">
             <h3>💰 Quick Cost Estimator</h3>
-            <label htmlFor="guests">Number of Rafters ($65/person): </label>
-            <input
-              type="number"
-              id="guests"
-              value={guests}
-              onChange={(e) => setGuests(e.target.value)}
-              placeholder="Enter number of guests"
-            />
+
+            <div>
+              <label htmlFor="adults">Adults (21 &amp; older - $20/person): </label>
+              <input
+                type="number"
+                id="adults"
+                min="0"
+                value={adults}
+                onChange={(e) => setAdults(e.target.value)}
+                placeholder="0"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="youngAdults">Young Adults (18-21 - $15/person): </label>
+              <input
+                type="number"
+                id="youngAdults"
+                min="0"
+                value={youngAdults}
+                onChange={(e) => setYoungAdults(e.target.value)}
+                placeholder="0"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="teens">Teens ($10/person): </label>
+              <input
+                type="number"
+                id="teens"
+                min="0"
+                value={teens}
+                onChange={(e) => setTeens(e.target.value)}
+                placeholder="0"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="children">Children (10-12 - $5/person): </label>
+              <input
+                type="number"
+                id="children"
+                min="0"
+                value={children}
+                onChange={(e) => setChildren(e.target.value)}
+                placeholder="0"
+              />
+            </div>
+
             <button onClick={handleCalculate}>Calculate</button>
 
             {totalCost !== null && (
