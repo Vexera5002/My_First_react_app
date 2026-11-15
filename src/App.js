@@ -80,11 +80,11 @@ function App() {
           />
           <h2>Required safety equipment:</h2>
           <ol>
-            <li>Helmet</li>
-            <li>Lifejacket</li>
-            <li>Safety Hook (For hooking onto the raft)</li>
+            <li>Helmet = $5</li>
+            <li>Lifejacket = $5</li>
+            <li>Safety Hook (For hooking onto the raft) = Free</li>
             <li>Waterproof Clothing (not provided)</li>
-            <li>Waterproof Jacket</li>
+            <li>Waterproof Jacket (optional) +$5</li>
           </ol>
           <p>Recommended to bring shoes or other optional clothing that you don't mind getting soaked</p>
         </div>
